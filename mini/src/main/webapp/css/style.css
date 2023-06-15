@@ -1,0 +1,359 @@
+@charset "UTF-8";
+
+/* 초기화 */
+
+* {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	color: #000;
+	font-family: "맑은고딕";
+}
+
+html {
+	width:1000px;
+	font-size: 10px;
+	height: 100%;
+	background-color: #fff;	
+}
+
+ul, li{
+	list-style: none;
+}
+
+a {
+	display: block;
+  	text-decoration: none;
+  	color: #000;
+  	cursor:pointer;
+  
+}
+
+/* header */
+
+.header {
+	width: 1000px;
+	height: 100px;
+ 	margin: 0 auto;
+}
+
+.logo {
+	width: 200px;
+	height: 80px;
+	margin: 0;
+	float: left;
+}
+
+.logo a {	
+	text-decoration: none;
+}
+
+.logo h2{
+	align-content: center;
+	justify-content: center;
+	margin-top: 30px;
+	margin-left: 30px;
+	font-weight: bold;
+	font-size: 30px;
+	color: #000;
+}
+
+.navi{
+	width: 700px;
+	height: 80px;
+	float: right;
+	margin-top: 30px;
+	margin-right: 5px;
+	margin-left: 30px;
+}
+
+.menu{
+	display: flex;
+	float:right;
+	margin-right: 0px;
+}
+
+.menu li{
+	width : 120px;
+	height: 50px;
+	line-height: 50px;
+	position:relative;
+	padding: 0;
+	margin: 0;
+}
+
+.menu li a {
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+	
+}
+
+/* main */
+
+main{
+	width: 1000px;
+	height: 2000px;
+	margin: 0 auto;
+}
+
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.title{
+	width: 200px;
+	text-align: center;
+	margin: 40px auto;
+	padding-bottom: 20px;
+	border-bottom: 5px solid #000;
+}
+
+.board_list{
+	width: 100%;
+  	border-top: 1px solid #444444;
+  	order-collapse: collapse;
+  	font-size: 1.5rem;
+}
+
+.board_list th,
+.board_list td {
+  /* border-spacing: 0; */
+  border-bottom: 1px solid #444444;
+  padding: 10px;
+  text-align: center;
+}
+
+/* footer */
+
+footer{
+	width: 1200px;
+	height:200px;
+ 	margin: 0 auto;
+}
+
+.bt_logo{
+	margin: 0 auto;
+}
+
+
+/* view */
+
+.board_view {
+  width: 100%;
+  border-top: 2px solid #000;
+}
+
+.board_view .view_title {  padding: 20px 15px;
+  border-bottom: 1px dashed #ddd;
+  font-size: 2rem;
+}
+
+.board_view .view_info {
+  padding: 15px;
+  border-bottom: 1px solid #999;
+  font-size: 0;
+}
+
+.board_view .view_info dl {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.board_view .view_info dl:first-child {
+  padding-left: 0;
+}
+
+.board_view .view_info dl::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  display: block;
+  width: 1px;
+  height: 13px;
+  background: #ddd;
+}
+
+.board_view .view_info dl:first-child::before {
+  display: none;
+}
+
+.board_view .view_info dl dt,
+.board_view .view_info dl dd {
+  display: inline-block;
+  font-size: 1.4rem;
+}
+
+.board_view .view_info dl dd {
+  margin-left: 10px;
+  color: #777;
+}
+
+.board_view .view_content {
+  padding: 15px;
+  border-bottom: 1px solid #000;
+  line-height: 160%;
+  font-size: 1.4rem;
+}
+
+/* write */
+
+.epilogue_write{
+	border-top: 2px solid #000;
+}
+
+.epilogue_write .epi_title,
+.epilogue_write .epi_info{
+	padding: 15px;
+}
+
+.epilogue_write .epi_info{
+	border-top: 1px dashed #ddd;
+  	border-bottom: 1px solid #000;
+ 	 font-size: 0; 
+}
+
+.epilogue_write .epi_title dl{
+	font-size: 0;
+}
+
+.epilogue_write .epi_info dl{
+	display: inline-block;
+  	width: 50%;
+ 	vertical-align: middle;
+}
+
+.epilogue_write .epi_title dt,
+.epilogue_write .epi_title dd,
+.epilogue_write .epi_info dt,
+.epilogue_write .epi_info dd {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.4rem;	
+}
+
+.epilogue_write .epi_title dt,
+.epilogue_write .epi_info dt{
+  	width: 100px;	
+}
+
+.epilogue_write .epi_title dd{
+	width: calc(100% - 100px);
+}
+
+.epilogue_write .epi_title input[type="text"],
+.epilogue_write .epi_info input[type="text"],
+.epilogue_write .epi_info input[type="text"]{
+	padding: 10px;
+  	box-sizing: border-box;
+}
+
+.epilogue_write .epi_title input[type="text"]{
+	width: 80%;
+}
+
+.epilogue_write .content{
+	border-bottom: 1px solid #000;
+}
+
+.epilogue_write .content textarea{
+	display: block;
+ 	 width: 100%;
+  	height: 300px;
+  	padding: 15px;
+  	box-sizing: border-box;
+  	border: 0;
+  	resize: vertical;
+  	font-size: 1.4rem;
+}
+
+/* 공통 */
+
+.wrap_button{
+	width:150px; 
+	display: flex;
+}
+
+.bt_wrap {
+	width: 100px;
+  	margin: 30px;
+  	text-align: center;
+  	font-size: 0;
+  	background-color: #000;
+  	border-radius: 5px;
+}
+
+.bt_wrap a {
+  	display: inline-block;
+  	min-width: 80px;
+  	padding: 10px;
+  	border: 1px solid #000;
+  	border-radius: 2px;
+  	font-weight:bold;
+  	font-size: 1.4rem;
+  	text-align: center;
+  	color: #fff;
+}
+
+.bt_wrap a:hover {
+  text-decoration: underline;
+}
+
+.bt_wrap a.on {
+  background: #000;
+  color: #fff;
+}
+
+.board_page {
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.board_page a {
+  text-decoration: none;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  box-sizing: border-box;
+  border-left: 0;
+  line-height: 32px;
+  margin: 0;
+  color: #000;
+}
+
+.board_page a:hover {
+  text-decoration: underline;
+}
+
+.board_page a.bt {
+  /* padding-top: 10px; */
+  font-size: 1.2rem;
+  letter-spacing: -1px;
+}
+
+.board_page a.num {
+  font-size: 1.4rem;
+}
+
+.board_page a.num.on {
+  border-color: #000;
+  background: #000;
+  color: #fff;
+}
+
+.bt_list {
+	width: 100px;
+ 	text-align: right;
+  	margin: 30px auto;
+  	text-align: center;
+  	font-size: 0;
+  	background-color: #000;
+  	border-radius: 5px;
+}
